@@ -1,0 +1,20 @@
+{
+  "source_doc_id": "MFG-ARC-PAY-CORE-001",
+  "source_doc_version": "v1.0",
+  "scope": "Payment Engine only",
+  "project_key": "AIF",
+  "flows": ["F-001", "F-002", "F-003"],
+  "components": ["PE-001", "PE-002", "PE-003", "PE-004", "PE-005", "PE-006", "PE-007", "PE-008", "PE-009", "PE-010", "PE-011", "PE-012"],
+  "test_cases": [
+    {"id": "TC-PE-001", "title": "Create and process a valid instant payment"},
+    {"id": "TC-PE-002", "title": "Reject invalid instant payment before screening"},
+    {"id": "TC-PE-003", "title": "Prevent duplicate instant payment submission via idempotency"},
+    {"id": "TC-PE-004", "title": "Reject unsupported source channel for payment intake"},
+    {"id": "TC-PE-005", "title": "Accept valid corporate SDD batch and reject invalid mandate line item"},
+    {"id": "TC-PE-006", "title": "Reject duplicate SDD batch submission"},
+    {"id": "TC-PE-007", "title": "Approve settlement when liquidity is sufficient"},
+    {"id": "TC-PE-008", "title": "Block settlement when liquidity is insufficient"},
+    {"id": "TC-PE-009", "title": "Process supported exception event and update payment status"},
+    {"id": "TC-PE-010", "title": "Reconcile payments and generate reporting summary"}
+  ]
+}
