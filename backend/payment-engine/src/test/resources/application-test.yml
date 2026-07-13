@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:16-alpine:///mfg_payment_engine_test
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    username: test
+    password: test
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        format_sql: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+  jackson:
+    time-zone: UTC
+    default-property-inclusion: non_null
+
+  main:
+    allow-bean-definition-overriding: true
+
+logging:
+  level:
+    root: WARN
+    com.aif.mfg.paymentengine: INFO
+
+mfg:
+  payment-engine:
+    idempotency:
+      cleanup-fixed-delay-ms: 60000
