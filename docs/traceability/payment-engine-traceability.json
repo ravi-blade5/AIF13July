@@ -1,0 +1,153 @@
+{
+  "artifact_type": "sdlc_traceability_pack",
+  "source": {
+    "source_doc_id": "MFG-ARC-PAY-CORE-001",
+    "source_doc_version": "v1.0",
+    "source_file": "1783915119965/MFG-Architecture-6page.docx",
+    "uploaded_file": "MFG-Architecture-6page.docx",
+    "title": "Meridian Financial Group — Reference Architecture: SEPA Payment Engine, Integration Fabric & Core Banking Services"
+  },
+  "scope": {
+    "decomposition_scope": "Payment Engine only",
+    "portfolio": "MFG Payments & Core",
+    "programme": "Payment Engine",
+    "jira_project_key": "AIF",
+    "repository": "ravi-blade5/AIF13July",
+    "branch": "payment-engine-sdlc-automation"
+  },
+  "jira_issues": {
+    "epics": [
+      "AIF-161",
+      "AIF-162",
+      "AIF-163",
+      "AIF-164"
+    ],
+    "stories": [
+      "AIF-165",
+      "AIF-166",
+      "AIF-167",
+      "AIF-168"
+    ],
+    "technical_tasks": [
+      "AIF-169",
+      "AIF-170",
+      "AIF-171",
+      "AIF-172",
+      "AIF-173",
+      "AIF-174"
+    ]
+  },
+  "requirements": [
+    "BR-PE-001",
+    "BR-PE-002",
+    "BR-PE-003",
+    "BR-PE-004",
+    "BR-PE-005",
+    "BR-PE-006",
+    "BR-PE-007",
+    "BR-PE-008",
+    "BR-PE-009",
+    "BR-PE-010",
+    "BR-PE-011",
+    "BR-PE-012"
+  ],
+  "local_story_refs": [
+    "US-PE-001",
+    "US-PE-002",
+    "US-PE-003",
+    "US-PE-004"
+  ],
+  "acceptance_criteria": [
+    "AC-001",
+    "AC-002",
+    "AC-003",
+    "AC-004",
+    "AC-005",
+    "AC-006",
+    "AC-007",
+    "AC-008",
+    "AC-009",
+    "AC-010",
+    "AC-011",
+    "AC-012",
+    "AC-013",
+    "AC-014",
+    "AC-015",
+    "AC-016",
+    "AC-017",
+    "AC-018",
+    "AC-019",
+    "AC-020",
+    "AC-021",
+    "AC-022",
+    "AC-023",
+    "AC-024",
+    "AC-025"
+  ],
+  "components": [
+    "PE-001",
+    "PE-002",
+    "PE-003",
+    "PE-004",
+    "PE-005",
+    "PE-006",
+    "PE-007",
+    "PE-008",
+    "PE-009",
+    "PE-010",
+    "PE-011",
+    "PE-012"
+  ],
+  "flows": [
+    "F-001",
+    "F-002",
+    "F-003"
+  ],
+  "source_sections": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "4.1",
+    "4.2",
+    "5",
+    "6",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13"
+  ],
+  "nfr_refs": [
+    "Tier 0",
+    "Tier 1",
+    "Tier 2",
+    "Tier 3",
+    "SCT Inst p99 e2e <10s",
+    "Tier 0 availability 99.995%",
+    "Tier 0 RPO 0",
+    "Tier 0 RTO <2m",
+    "Regulatory events auditable within 24h",
+    "24h idempotency deduplication"
+  ],
+  "regulatory_refs": [
+    "PSD2 RTS",
+    "SEPA/EPC Rulebooks",
+    "GDPR",
+    "DORA",
+    "AMLD 5&6",
+    "eIDAS",
+    "PCI-DSS v4.0",
+    "ISO 27001",
+    "ISO 22301",
+    "Basel III",
+    "MiFID II where applicable",
+    "WCAG 2.2 AA"
+  ],
+  "operation": {
+    "approval_status": "approved",
+    "github_operation": "create_or_update_traceability_files",
+    "pull_request_requested": false
+  }
+}
