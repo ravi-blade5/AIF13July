@@ -1,0 +1,60 @@
+spring:
+  application:
+    name: mfg-payment-engine
+  threads:
+    virtual:
+      enabled: true
+  jackson:
+    default-property-inclusion: non_null
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${OAUTH2_ISSUER_URI:}
+
+server:
+  port: 8080
+  shutdown: graceful
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+payment-engine:
+  security:
+    require-authentication: false
+    allowed-source-channels:
+      - MOBILE
+      - WEB
+      - CORPORATE
+      - PSD2
+      - TPP
+      - B2B
+  idempotency:
+    ttl-hours: 24
+  screening:
+    blocked-name-tokens:
+      - SANCTIONED
+      - BLOCKED
+  fraud:
+    block-threshold: 900
+    flag-threshold: 700
+  liquidity:
+    default-limit-eur: 10000000
+  traceability:
+    source-doc-id: MFG-ARC-PAY-CORE-001
+    source-doc-version: v1.0
+    source-file: 1783915119965/MFG-Architecture-6page.docx

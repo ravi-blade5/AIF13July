@@ -1,0 +1,14 @@
+{
+  "source_doc_id": "MFG-ARC-PAY-CORE-001",
+  "source_doc_version": "v1.0",
+  "source_file": "1783915119965/MFG-Architecture-6page.docx",
+  "scope": "Payment Engine only",
+  "jira_issues": ["AIF-161", "AIF-162", "AIF-163", "AIF-164", "AIF-165", "AIF-166", "AIF-167", "AIF-168", "AIF-169", "AIF-170", "AIF-171", "AIF-172", "AIF-173", "AIF-174"],
+  "requirements": ["BR-PE-001", "BR-PE-002", "BR-PE-003", "BR-PE-004", "BR-PE-005", "BR-PE-006", "BR-PE-007", "BR-PE-008", "BR-PE-009", "BR-PE-010", "BR-PE-011", "BR-PE-012"],
+  "stories": ["US-PE-001", "US-PE-002", "US-PE-003", "US-PE-004"],
+  "acceptance_criteria": ["AC-001", "AC-002", "AC-003", "AC-004", "AC-005", "AC-006", "AC-007", "AC-008", "AC-009", "AC-010", "AC-011", "AC-012", "AC-013", "AC-014", "AC-015", "AC-016", "AC-017", "AC-018", "AC-019", "AC-020", "AC-021", "AC-022", "AC-023", "AC-024", "AC-025"],
+  "components": ["PE-001", "PE-002", "PE-003", "PE-004", "PE-005", "PE-006", "PE-007", "PE-008", "PE-009", "PE-010", "PE-011", "PE-012"],
+  "flows": ["F-001", "F-002", "F-003"],
+  "repository": "ravi-blade5/AIF13July",
+  "branch": "payment-engine-sdlc-automation"
+}

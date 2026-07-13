@@ -1,0 +1,12 @@
+{
+  "source_doc_id": "MFG-ARC-PAY-CORE-001",
+  "source_doc_version": "v1.0",
+  "flows": ["F-001", "F-002", "F-003"],
+  "payments": [
+    {"paymentId": "pay_inst_001", "rail": "SCT_INST", "debtorIban": "DE89370400440532013000", "creditorIban": "FR1420041010050500013M02606", "creditorName": "Example Merchant", "amount": "25.50", "currency": "EUR", "sourceChannel": "MOBILE", "idempotencyKey": "idem-inst-001"},
+    {"paymentId": "pay_inst_blocked_001", "rail": "SCT_INST", "debtorIban": "DE89370400440532013000", "creditorIban": "FR1420041010050500013M02606", "creditorName": "SANCTIONED Entity", "amount": "25.50", "currency": "EUR", "sourceChannel": "MOBILE", "idempotencyKey": "idem-inst-002"}
+  ],
+  "batches": [
+    {"batchReference": "batch-ref-001", "corporateId": "corp-001", "requestedCollectionDate": "tomorrow", "instructions": [{"instructionReference": "instr-001", "mandateReference": "MANDATE123"}, {"instructionReference": "instr-002", "mandateReference": "INVALID-MANDATE"}]}
+  ]
+}
